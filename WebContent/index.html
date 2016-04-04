@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>HeavyWater OCR Text</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="content" class="container">
+
+      <div style="height: 10px;"> </div>
+
+      <h3>HeavyWater OCR Text Display</h3>
+      <p>
+      This is a WEB APP which can show the corresponding OCR text on a file picture!
+      </p>
+
+      <h4>Contents of this Project</h4>
+
+      <p>
+      Your input should be one source file (tiff), and one OCR text file (xml). 
+      And once your upload is success, you can see the corresponding text on the picture by clicking areas on the picture. 
+      (what else...)
+      </p>
+      
+      <h4>Note: Make sure your image and xml uploaded at the same time!</h4>
+      
+      <a href='display'>Show Images in Storage</a>
+      
+      <form action="upload" method="post" enctype="multipart/form-data">
+      	<label>File Image(.tif) </label>: 
+  		<input type="file" name="pic"><br/>
+  		<label>OCR Text(.xml) </label>: 
+  		<input type="file" name="xml" accept="text/xml"><br/>
+  		<input type="submit" value="Submit Image and XML">
+	  </form>
+    </div>
+  </body>
+</html>
